@@ -11,7 +11,9 @@
             ],
             "defines": [
                 "STM32F30X",
-                "USE_STDPERIPH_DRIVER"
+                "STM32F301x8",
+                "USE_STDPERIPH_DRIVER",
+                "__BSD_VISIBLE=1"
             ]
         }
     ],

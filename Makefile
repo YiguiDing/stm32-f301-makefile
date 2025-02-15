@@ -88,7 +88,9 @@ AS_DEFS =
 # C defines
 C_DEFS =  \
 	-D STM32F30X \
-	-D USE_STDPERIPH_DRIVER
+	-D STM32F301x8 \
+	-D USE_STDPERIPH_DRIVER \
+	-D __BSD_VISIBLE
 
 # compile gcc flags
 ASM_FLAGS += $(MCU) $(AS_DEFS) $(AS_INCLUDES) $(OPT) -Wall -fdata-sections -ffunction-sections
