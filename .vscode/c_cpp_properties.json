@@ -4,6 +4,7 @@
             "name": "Win32",
             "compilerPath": "D:/Applications/gcc-arm-none-eabi-10.3-2021.10/bin/arm-none-eabi-gcc.exe",
             "includePath": [
+                "D:/Applications/gcc-arm-none-eabi-10.3-2021.10/arm-none-eabi/include/**",
                 "${workspaceFolder}/Library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/Device/ST/STM32F30x/Include/",
                 "${workspaceFolder}/Library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/Include/",
                 "${workspaceFolder}/Library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/STM32F30x_StdPeriph_Driver/inc/",
@@ -13,6 +14,7 @@
                 "STM32F30X",
                 "STM32F301x8",
                 "USE_STDPERIPH_DRIVER",
+                "ARM_MATH_CM4",
                 "__BSD_VISIBLE=1"
             ]
         }

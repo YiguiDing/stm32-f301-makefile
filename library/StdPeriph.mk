@@ -12,6 +12,10 @@ ASM_SOURCES += library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/Device
 C_SOURCES += library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/Device/ST/STM32F30x/Source/Templates/system_stm32f30x.c
 # 标准外设库: stm32f30x_gpio.c
 C_SOURCES += $(wildcard library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/STM32F30x_StdPeriph_Driver/src/*.c)
+# DSP库：
+C_SOURCES += $(wildcard library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/DSP_Lib/Source/CommonTables/*.c) # sin/cos表
+C_SOURCES += $(wildcard library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/DSP_Lib/Source/FastMathFunctions/*.c) # sin() and cos()
+# C_SOURCES += $(wildcard library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/DSP_Lib/Source/BasicMathFunctions/*.c) # 基本运算：加减乘除
 # ################################################################# CPP sources ################################################################# 
 CPP_SOURCES += 
 # ################################################################# C/CPP header ################################################################# 
@@ -19,6 +23,7 @@ CPP_SOURCES +=
 # 外设寄存器描述: stm32f30x.h
 C_CPP_INCLUDES += -I library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/Device/ST/STM32F30x/Include/
 # 内核寄存器描述: core_cm4.h core_cmInstr.h core_cmFunc.h core_cmSimd.h
+# DSP库：arm_math.h
 C_CPP_INCLUDES += -I library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/CMSIS/Include/
 # 标准外设库: stm32f30x_gpio.h
 C_CPP_INCLUDES += -I library/STM32F30x_DSP_StdPeriph_Lib_V1.3.0/Libraries/STM32F30x_StdPeriph_Driver/inc

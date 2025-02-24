@@ -90,6 +90,7 @@ C_DEFS =  \
 	-D STM32F30X \
 	-D STM32F301x8 \
 	-D USE_STDPERIPH_DRIVER \
+	-D ARM_MATH_CM4 \
 	-D __BSD_VISIBLE
 
 # compile gcc flags
